@@ -1,3 +1,68 @@
 body {
   background: peachpuff;
 }
+
+.container{
+  /* padding:1rem; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 30px;
+  border-radius: 1px;
+  flex-wrap: wrap;
+}
+
+
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+background-color: #d8d8d8;
+border: 1px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+
+
+
+.inner-container{
+display: flex;
+flex: 3;
+gap: 30px;
+flex-wrap: wrap;
+flex-direction: column;
+}
+
+.inner-inner-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.inner-inner-container > div {
+width: 22%;
+background: gray;
+margin: 2vw;
+}
+
+.h{
+  flex-grow: 1;
+}
+
+ @media (min-width: 1240px){
+  .container{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .inner-container{
+    flex-basis: 10%;
+  }
+  
+  .a{
+    flex-basis: 100%;
+  }
+  .h{
+    flex-basis: 20%;
+  }
+} 
